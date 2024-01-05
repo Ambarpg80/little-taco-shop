@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <meta name="author" content="Ambar Gonzalez"> 
+    <meta name="description" content="This is an HTML Review Document"> 
+    <title>HTML Review</title>
+    <link rel="icon" href="images/fajitas.png" type="image/x-icon"> <!--favicon-->
+    <link rel="stylesheet" href="style.css" type="text/css">
+</head>
+<body>
+  <main>
+    <nav> <b>Ready to nav !</b>
+        <a href="#lists">Lists</a>
+        <a href="#text-basics">Text</a>
+        <a href="#links">Links</a>
+        <a href="about.html">About</a>
+    </nav> 
+    <section>
+        <h1>Ready to Review & Learn HTML</h1> 
+            <figure>
+                <img id="image1" src="images/HTML5_logo.png" alt="HTML logo" loading="lazy">
+                <figcaption>This is a caption for  HTML5 logo</figcaption>
+            </figure>
+
+        <h3>What is HTML? </h3>
+        <p> HTML <em>Hypertext Markup Language</em> displays text, links, images and other media content in the web browser. <em>Hypertext</em> is text which contains links to other texts. <em>Markup</em>is comprised of elements that use tags which explain the purpose of that part of the content.</p> 
+    </section>
+
+    <hr>
+
+    <section id="lists">
+        <h3> Types af Lists</h3>
+        <ul>  
+            <li>Unordered Lists have bullet points</li>
+            <li>like so</li>
+            <li>To keep things in some kind of order</li>
+            <li> But not anything that needs to be chronological</li>
+        </ul>
+        <ol>
+            <li>Ordered Lists are numbered</li>
+            <li>So this is one</li>
+            <li>followed by 2 </li>
+            <li>followed by 3 as in instructions for a recipe</li>
+        </ol>
+        <br>
+        <dl> <!--for implementing a glossary or to display metadata (key/value pairs)-->
+            <dt><em>This is a description list which keeps lists grouped together</em> </dt>
+                <dd>This should be an element of the detail topic</dd>
+                <dd>while this should be a vlaue belonging to such a detail</dd>
+                <dd> note that that there are <em>no display elements</em></dd>
+                <dd>so that the list text is just displayed as typed. </dd>
+           
+            <dt> <em>See this Second example</em> </dt>
+                <dd>Where the details for this element is indented and rendered under this detail.</dd>
+                <dd>should we put a second detail </dd>
+                <dd>or perhaps a third, we will see how differently this type of list is oredered from the other 2.</dd>
+        </dl>
+    </section>
+
+    <hr>
+
+    <section id="text-basics">
+        <h3>Text Basics</h3>
+            <ul> 
+                <li class="no-bullet"><strong>Headings</strong> go from H1 to H6 like below </li>
+                <li class="no-bullet"><h1>Heading</h1> </li>  
+                <li class="no-bullet"><h2>Heading</h2></li>  
+                <li class="no-bullet"><h3>Heading</h3></li>  
+                <li class="no-bullet"><h4>Heading</h4> </li>
+                <li class="no-bullet"><h5>Heading</h5> </li> 
+                <li class="no-bullet"><h6>Heading</h6></li>
+            </ul>    
+            <h4>Inline elements (elements that don't take up the row block)</h4>
+            <ul>
+                <li class="no-bullet"><em> &lt; em &gt; for emphasis/ italic</em></li>
+                <li class="no-bullet"><strong> &lt; b or strong &gt; for bold</strong></li>
+                <li class="no-bullet"> use <em>text-decoration: underline</em> in CSS to underline</li>
+                <li class="no-bullet"> use <b>&lt;address&gt;</b> for addresses. Appears italicized.</li>
+            </ul>
+                <address>123 Seasame Street, New York NY 12345</address>
+            
+            <p> Use <b>&lt;!-- comment --&gt;</b> For Comments</p><!--comment-->
+    </section>
+
+    <hr>
+
+    <section id="paragraphs">
+        <h3>Paragraphs</h3>
+        
+            <p>Paragraphs distinguish themselves by having vertical spacing built-in from one paragraph...</p>
+            <p >To this next paragraph as you present information</p>
+            <p><b>br</b> is for line breaks. Because if we don't, then everything gets put onto one line of text 
+                <br>&nbsp;&nbsp;&nbsp; ...as opposed to 
+                <br>&nbsp;&nbsp;&nbsp; ...having everything
+                <br>&nbsp;&nbsp;&nbsp; ...on a separate 
+                <br>&nbsp;&nbsp;&nbsp; ...line
+          </p>
+    </section>
+
+    <hr>
+
+    <section id="HTML-entities">
+        <h3>HTML Enities</h3> 
+            <p >HTML Enities <em>are preceded by <b>&</b> and end with <b>;</b></em>. Used to display reserved characters (which would otherwise be interpreted as HTML code), and invisible characters (like non-breaking spaces)</p>
+            
+            <ul>
+                <li>&nbsp; <b>& + nbsp;</b> is for indenting </li>
+                <li>&nbsp; &nbsp; the more it is used.</li>
+                <li>&nbsp; &nbsp; &nbsp; the more that text is indented.</li>
+            </ul>
+            <ul>
+                <li>&lt; <b>& + lt;</b> prints the less than symbol</li>
+                <li>&gt; <b>& + gt;</b> prints the greater than symbol</li>
+                <li>&copy; <b>& + copy;</b> is for the copyright symbol</li>
+                <li><abbr title="Mozilla Developer Network">MDN</abbr> abbr lets us undlerline abbreviations, but we need to add a title atribute for it to be effective and show the meaning for the abreviation on hover.Doesn't work with screen readers, or assistive technologies.</li>
+            </ul>
+    </section>
+
+    <hr>
+
+    <section id="links">
+        <h3>Links</h3>
+            <p>The <strong>&lt;link&gt;</strong> element specifies relationships between the current document and an external resource. This element is most commonly used to link to <em>stylesheets</em>, but is also used toestablish site icons  <em> (both <b>"favicon"</b> style icons and icons for the home screen and apps on mobile devices)</em> among other things. </p>
+            <p><strong>&lt;a&gt;</strong> is the <strong>anchor</strong> tag. <a href="https://developer.mozilla.org/">MDN</a>
+            </p>
+    </section>
+
+    <hr>
+
+    <section id="other_links">
+        <h4>see nav bar for additional links</h4>
+       
+        <h4>Other Link Types</h4>
+            <ul> 
+                <li class="no-bullet">Download link (on click): <a href="HTML5.png" download>HTML5 favicon</a></li><!--Needs additional download attribute to work-->
+                <li class="no-bullet">Contact me at <a href="mailto:random@example.com">my email address</a></li><!--Better to use contact form-->
+                <li class="no-bullet">Dial <a href="tel:+1234567890">phone number</a></li>
+                <li class="no-bullet">Open in a New tab <a href="https://www.google.com" target="_blank">Google</a></li>
+            </ul>
+    </section>
+
+    <hr>
+
+    <section id="images">
+        <h3>Images</h3>
+       
+        <figure>
+            <img src="images/cmophoto-net-EmVKKf3wUZQ-unsplash.jpg" alt="sunset on beach" loading="lazy"> <!--HTML 5 doesn't need closing / for <img> tag-->
+            <figcaption>Image of a beach at sunset</figcaption>
+        </figure>
+        <figure>
+            <img src="images/david-vives-ELf8M_YWRTY-unsplash.jpg" alt="afternoon lounging on beach" loading="lazy">
+            <figcaption>Image of people lounging on the beach during the day</figcaption>
+        </figure>
+    </section>
+
+    <hr>
+
+    <section id="semantics_table"> 
+        <h3>Semantics: Tags that affect the physical structure of the layot </h3>
+        <div>&lt;div&gt; just dividers</div>
+        <details>
+            <summary>sumarized info which let us</summary>
+            <p>see the rest of the informaion that we want displayed</p>
+        </details>
+        <h4>Tables</h4>
+        <table><!--only expands to the size of the table-->
+            <caption> How to Make a Table</caption>
+            <thead>
+                <tr>
+                    <th>&nbsp;</th>
+                    <th scope="col">head row 1</th>
+                    <th scope="col" colspan="2">head row 2</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th scope="row">row side heading 1</th>
+                    <td>this should be under col 1</td>
+                    <td>while these 2 should be</td>
+                    <td>col 2 due to colspan</td>
+                </tr>
+                <tr>
+                    <th rowspan="2" >row side heading 2</th>
+                    <td >still under col 1</td>
+                    <td colspan="2">still part of 2 with colspan 2 </td>
+                </tr>  
+                <tr>
+                    <td>but now we row span 2 </td>
+                    <td colspan="2">&nbsp;</td>
+                </tr>
+               
+                
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td colspan="4"> And this is a footer for the whole table because I span 3 columns</td>
+                </tr>
+            </tfoot>
+        </table>
+        
+    </section>
+
+    <hr>
+
+    <section id="forms">
+        <h2>Contact Me</h2>
+        <article id="contact">
+            <h4>I'd like to hear from you</h4>
+            <form action="https://httpbin.org/post" method="post">
+                <fieldset>
+                    <legend>Personal info</legend>
+                <p><!--using p tag provides auto spacing between inputs-->
+                    <label for="firstName">First Name:</label>
+                        <input type="text" 
+                        name="firstName" 
+                        id="firstName" 
+                        placeholder="first name" 
+                        autocomplete="on" 
+                        required 
+                        autofocus >
+                        <!-- autocomplete- makes suggestions based on info previously entered
+                            required- makes field required (validation).
+                            autofocus- focuses cursor on a field on form load can only be used once per page -->
+                </p>
+                <p>  
+                    <label for="lastName">Last Name:</label>
+                        <input type="text" 
+                        name="lastName" id="lastName" 
+                        placeholder="last name" 
+                        autocomplete="on" 
+                        required>
+                </p>
+                <p>  
+                    <label for="password">Password: </label>
+                        <input type="password" 
+                        name="password" id="password" 
+                        placeholder="password" 
+                        autocomplete="on" 
+                        required>
+                </p>
+                <p>  
+                    <label for="phone">Phone Number:</label>
+                        <input type="tel" 
+                        name="phone" id="phone" 
+                        placeholder="0000000000" 
+                        autocomplete="on" 
+                        pattern="[0-9]{3}[0-9]{3}[0-9]{4}"
+                        required>
+                        <!--pattern enforced-->
+                </p>
+                <p>  
+                    <label for="decade">Favorite Decade:</label>
+                        <input type="number" 
+                        name="decade" id="decade" 
+                        min="1950"
+                        max="2020"
+                        value="1980" 
+                        step="10">
+                <!-- <p>  
+                        <label for="coffee">Favorite Coffee:
+                            <select type="number" 
+                                    name="coffee" 
+                                    id="coffee">
+                                    
+                              <optgroup label="Coffees">
+                                <option value="Regular" >Regular</option>
+                                <option value="decaf">Decaf</option>
+                              </optgroup>
+                              <optgroup label="Espressos">
+                                <option value="cortadito" selected>Cortadito</option>
+                                <option value="latte">Latte</option>
+                                <option value="cappuccino">Cappuccino</option>
+                                <option value="americano">Americano</option>
+                              </optgroup> 
+                                <option value="ohter">Other</option>
+                            </select>
+                    </p>         -->
+                <!-- multiple size="5" lets us see 5 choices at a time-->
+                <p>  
+                    <label for="coffee">Favorite Coffee:</label>
+                    <input type="text" name="coffee" id="coffee" list="coffee-list">
+                        <datalist id="coffee-list">
+                            <option value="Regular" >
+                            <option value="Decaf">
+                            <option value="Cortadito">
+                            <option value="Latte">
+                            <option value="Cappuccino">
+                            <option value="Americano">
+                            <option value="Other">
+                        </datalist>
+                </p>
+            <!--filters according to options when input is typed-->
+            </fieldset>
+            <br>
+            <fieldset>
+                <legend>What is your favorite food?</legend>
+                <p>
+                    <input type="radio" name="food" id="tacos" value="tacos">
+                    <label for="tacos">Tacos</label>
+                </p>
+                <p>
+                    <input type="radio" name="food" id="burgers" value="burgers">
+                    <label for="burgers">Burger</label>
+                </p>
+                <p>
+                    <input type="radio" name="food" id="pizza" value="pizza">
+                    <label for="pizza">Pizza</label>
+                </p>
+                <p>
+                    <input type="radio" name="food" id="otherPet" value="otherPet">
+                    <label for="otherPet">Other</label>
+                </p>
+            </fieldset>
+            <br>
+            <fieldset>
+                <legend>Do you have pets?</legend>
+                <p>
+                    <input type="checkbox" name="pet" id="dog" value="dog">
+                    <label for="dog">Dog</label>
+                </p>
+                <p>
+                    <input type="checkbox" name="pet" id="cat" value="cat">
+                    <label for="cat">Cat</label>
+                </p>
+                <p>
+                    <input type="checkbox" name="pet" id="fish" value="fish">
+                    <label for="fish">Fish</label>
+                </p>
+                <p>
+                    <input type="checkbox" name="pet" id="otherFood" value="otherFood">
+                    <label for="otherFood">Other</label>
+                </p>
+                
+            </fieldset>
+            <br>
+            <fieldset>
+                <legend>Send me a note</legend>
+                <p>
+                    <label for="message">Your Message:</label>
+                </p>
+                <textarea name="message" 
+                          id="message" 
+                          placeholder="Type your message here" 
+                          cols="30" rows="10"></textarea>
+            </fieldset>
+            <br>
+            <button type="submit">Submit Button</button><!--Better Practice-->
+            <button type="reset">Reset Button</button><!--Clears form-->
+            <button type="submit" formaction="https://httpbin.org/post" formmethod="post">Post Button</button><!--Clears form-->
+            <input type="submit" value="Submit Input">
+            </form>
+        </article>
+    </section>
+    
+    
+    
+    <a href="#">Back to Top</a>
+    <br>&lt;&lt;&copy; <a href="www.ambarindev.com">AmbarInDev</a>&gt;&gt;
+
+
+  </main>
+</body>
+</html>
