@@ -1,0 +1,79 @@
+body{
+    background-color: rgb(255, 227, 47);
+    font-size: 20px;
+}
+nav{
+    background-color: rgb(247, 84, 84);
+    padding: 10px;
+}
+nav a{
+    font-size: 25px;
+    margin: 15px;
+}
+span{
+    color:#f9f9f9;
+    position: absolute;
+    left: 30%;
+    top: 30%;
+    font-size: 50px;
+    font-weight: bold;
+    text-shadow: 8px 2px 2px #1b1933;
+}
+dt{
+    font-weight: bold;
+}
+
+#image1, #image2,#image3{
+    height:300px;
+    width:350px;
+} 
+#menu{
+    background-color: rgba(249, 241, 229, 0.625);
+    padding-top: 20px;
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+table, tr,  td, caption{
+    border: 1px solid #000;
+    font-family: serif;
+    border-collapse: collapse;
+    padding: .5rem;
+}
+th{
+    background-color: black;
+    color:rgb(250, 235, 215);
+    border: 1px solid rgb(255, 255, 255);
+    padding: .5rem;
+}
+input, select, textarea, button{
+    font-size: large;
+    border-radius: 5px;
+    box-shadow: 0 0 2px 2px #00000079 ;
+}
+
+.dishes{
+    display: inline-block;
+    margin-left: 2%;
+}
+
+table{
+    margin-left: 40%;
+}
+.hoursContact{
+    width: 40%;
+    display: inline-block;
+    margin-left: 2%;
+    justify-content: center;
+}
+legend { font-weight: bold;}
+
+#contactUs{
+    padding-bottom: 20px; 
+    padding-left: 20px;
+}
+footer{
+    background-color: rgb(17, 8, 45); 
+    color:lightgray;
+    padding: 20px;
+}
